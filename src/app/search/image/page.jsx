@@ -3,7 +3,9 @@
 // eslint-disable-next-line @next/next/no-async-client-component
 import Link from "next/link";
 import ImageSearchResults from "../../components/ImageSearchResults";
+import delay from "delay";
 const WebSearch = async ({ searchParams }) => {
+  await delay(1000);
   // const router = useRouter();
   const startIndex = searchParams.start || "1";
   const response = await fetch(

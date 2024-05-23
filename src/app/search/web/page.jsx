@@ -3,8 +3,10 @@
 // eslint-disable-next-line @next/next/no-async-client-component
 import Link from "next/link";
 import WebSearchResults from "../../components/WebSearchResults";
+import delay from "delay";
 const WebSearch = async ({ searchParams }) => {
   // const router = useRouter();
+  await delay(1000);
   const startIndex = searchParams.start || "1";
   const response = await fetch(
     `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&start=${startIndex}`
