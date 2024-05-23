@@ -10,8 +10,11 @@ const SearchHeaderOptions = () => {
   const searchTerm = searchParams.get("searchTerm"); //搜索值
   const selectTab = (tab) => {
     console.log(pathName);
+    const startIndex = searchParams.get("start") || 1;
     router.push(
-      `/search/${tab === "Images" ? "image" : "web"}?searchTerm=${searchTerm}`
+      `/search/${
+        tab === "Images" ? "image" : "web"
+      }?searchTerm=${searchTerm}&start=${startIndex}`
     );
   };
 

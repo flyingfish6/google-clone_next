@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import PaginationButton from "./PaginationButton";
 const ImageSearchResults = ({ results }) => {
   return (
     <div className="pb-24 mt-4">
@@ -28,6 +29,7 @@ const ImageSearchResults = ({ results }) => {
           </div>
         ))}
       </div>
+      <PaginationButton />
     </div>
   );
 };

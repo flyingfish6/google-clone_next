@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Parser from "html-react-parser";
+import PaginationButton from "./PaginationButton";
 const WebSearchResults = ({ results }) => {
   //   console.log(results);
   return (
@@ -26,6 +27,7 @@ const WebSearchResults = ({ results }) => {
           {/* <p className="text-gray-600">{result.htmlSnippet}</p> */}
         </div>
       ))}
+      <PaginationButton />
     </div>
   );
 };

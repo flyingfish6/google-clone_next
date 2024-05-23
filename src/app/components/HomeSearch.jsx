@@ -12,7 +12,7 @@ const HomeSearch = () => {
     e.preventDefault();
     if (!input.trim()) return null;
     //除去前后的空格
-    router.push(`/search/web?searchTerm=${input}`);
+    router.push(`/search/web?searchTerm=${input}&start=1`);
   };
   async function randomSearch() {
     setRandomSearchLoading(true);
