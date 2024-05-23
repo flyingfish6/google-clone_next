@@ -38,7 +38,7 @@ const HomeSearch = () => {
         />
         <BsFillMicFill className="text-lg" />
       </form>
-      <div className="flex flex-col space-y-2 sm:space-y-0 sm:space-x-4 justify-center sm:flex-row mt-8">
+      <div className="flex flex-col space-y-2 sm:space-y-0 sm:space-x-4 justify-center sm:flex-row mt-8 text-gray-200">
         <button
           className="bg-amber-500 py-1 px-2 rounded-md  hover:brightness-105 hover:shadow-md transition-shadow"
           onClick={handleSubmit}
